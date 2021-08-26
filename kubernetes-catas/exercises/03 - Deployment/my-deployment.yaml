@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp-nginx
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 50%
+  selector:
+    matchLabels:
+      app: my-nginx
+  template:
+    metadata:
+      labels: 
+        app: my-nginx
+    spec:
+      containers:
+      - name: my-web
+        image: nginx:1.21.1-alpine
+        ports:
+        - containerPort: 80

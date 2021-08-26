@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: multitool
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: "multitool.com"
+    http:
+      paths:
+        - path: /
+          backend:
+            serviceName: multitool
+            servicePort: 80
