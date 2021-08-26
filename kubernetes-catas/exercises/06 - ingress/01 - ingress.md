@@ -139,7 +139,7 @@ Add the following to the bottom of the file and then save it.
 192.168.122.111 multitool.com
 ```
 
-Open `multitool.com` in a browser, and you should see the multitool output. In a production environment we would not edit hosts file but use a proper DNS server to link `multitool.com` to the ip of the `ingress controller`. 
+Open `multitool.com` in a browser, and you should see the multitool output.git s In a production environment we would not edit hosts file but use a proper DNS server to link `multitool.com` to the ip of the `ingress controller`. 
 
 ## Cleanup
 Remove the deployment, service and ingress
