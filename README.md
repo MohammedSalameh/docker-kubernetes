@@ -1,3 +1,3 @@
 # docker-kubernetes
 
-forked from https://github.com/softica-dk/kubernetes-catas
+forked (not really, but) from https://github.com/softica-dk/kubernetes-catas
