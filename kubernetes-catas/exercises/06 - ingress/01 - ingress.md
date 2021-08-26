@@ -104,6 +104,7 @@ metadata:
   name: multitool
   annotations:
     ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
   - host: "multitool.com"
